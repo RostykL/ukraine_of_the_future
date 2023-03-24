@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import * as S from "./styles";
+import Preview from "components/Slides/Preview";
+import Layout from "components/Layout";
+import Auction from "components/Slides/Auction";
+import Lectors from "components/Slides/Lectors";
+import Exhibition from "components/Slides/Exhibition";
+import ExhibitionZone from "components/Slides/ExhibitionZone";
+import AfterParty from "components/Slides/AfterParty";
+import VideoProject from "components/Slides/VideoProject";
+import BenefitForYou from "components/Slides/BenefitForYou";
+import JoiningUs from "components/Slides/JoiningUs";
+import Contacts from "components/Slides/Contacts";
+import Partners from "./components/Slides/Partners";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <S.Wrapper>
+      <Layout>
+        <Preview />
+        <Auction />
+        <Lectors />
+        <Exhibition />
+        <ExhibitionZone />
+        <AfterParty />
+        <VideoProject />
+        <BenefitForYou />
+        <JoiningUs />
+        <Contacts />
+        <Partners />
+      </Layout>
+    </S.Wrapper>
   );
 }
 

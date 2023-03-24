@@ -1,0 +1,116 @@
+import styled from "styled-components";
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  height: 100vh;
+  max-height: 800px;
+  margin-top: 50px;
+  position: relative;
+`;
+
+export const Headline = styled.div`
+  display: flex;
+  gap: 32px;
+  height: 100%;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1;
+`;
+
+export const PlaceImageWrapper = styled.div`
+  border-radius: 16px;
+  height: 500px;
+  left: 50px;
+  overflow: hidden;
+  position: absolute;
+  width: 750px;
+  z-index: -1;
+`;
+
+export const PlaceImageOverlay = styled.div`
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+`;
+
+export const PlaceImage = styled.img`
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+`;
+
+export const Bottom = styled.div`
+  width: 100%;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 2;
+`;
+
+export const Left = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 20px;
+`;
+
+export const Title = styled.div`
+  color: whitesmoke;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 16px;
+  text-transform: uppercase;
+  z-index: 1;
+`;
+
+export const Description = styled.div`
+  color: whitesmoke;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  line-height: 24px;
+  max-width: 700px;
+  z-index: 1;
+`;
+
+export const Right = styled.div``;
+
+export const InformativeSection = styled.div`
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 32px;
+  width: 100%;
+`;
+
+export const ImageLogo = styled.img`
+  max-width: 250px;
+`;
+
+export const BuyTicketsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 0;
+`;
+
+export const BuyTicketsText = styled.div`
+  color: white;
+  font-size: 1.9em;
+  font-weight: 500;
+  text-transform: uppercase;
+`;
+
+export const Kontramakra = styled.img`
+  max-width: 250px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.01);
+    transition: 0.4s ease-in-out;
+  }
+`;
