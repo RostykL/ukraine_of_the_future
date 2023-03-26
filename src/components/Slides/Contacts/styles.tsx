@@ -2,9 +2,12 @@ import styled from "styled-components";
 import { COLORS } from "shared/colors";
 
 export const Wrapper = styled.div`
-  margin-top: 100px;
+  margin: 100px 0;
   padding: 0 20px;
-  height: 100vh;
+
+  @media (max-width: 800px) {
+    margin: 64px 0;
+  }
 `;
 
 export const Header = styled.header`
@@ -21,8 +24,9 @@ export const Logo = styled.div`
   img {
     max-width: 300px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
       width: 100%;
+      max-width: 200px;
     }
   }
 `;

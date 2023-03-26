@@ -6,14 +6,26 @@ export const Wrapper = styled.div`
   display: flex;
   gap: 32px;
   width: 700px;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
 `;
 
 export const Photo = styled.img`
   border-radius: 16px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  height: 200px;
-  object-fit: cover;
-  width: 200px;
+  max-width: 300px;
+
+  @media (max-width: 650px) {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const InformationWrapper = styled.div`
@@ -31,6 +43,7 @@ export const Title = styled.div`
 `;
 
 export const Description = styled.div`
+  line-height: 30px;
   &:first-letter {
     text-transform: capitalize;
   }

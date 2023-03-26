@@ -11,7 +11,7 @@ import VideoProject from "components/Slides/VideoProject";
 import BenefitForYou from "components/Slides/BenefitForYou";
 import JoiningUs from "components/Slides/JoiningUs";
 import Contacts from "components/Slides/Contacts";
-import Partners from "./components/Slides/Partners";
+import Partners from "components/Slides/Partners";
 
 function App() {
   return (

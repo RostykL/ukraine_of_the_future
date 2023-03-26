@@ -4,10 +4,19 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 64px;
-  height: 100vh;
+  min-height: 100vh;
   max-height: 800px;
   margin-top: 50px;
   position: relative;
+
+  @media (max-width: 1250px) {
+    height: 100%;
+    max-height: 100%;
+  }
+
+  @media (max-width: 1000px) {
+    margin-top: 0;
+  }
 `;
 
 export const Headline = styled.div`
@@ -17,6 +26,11 @@ export const Headline = styled.div`
   justify-content: space-between;
   width: 100%;
   z-index: 1;
+
+  @media (max-width: 1000px) {
+    gap: 64px;
+    flex-direction: column;
+  }
 `;
 
 export const PlaceImageWrapper = styled.div`
@@ -27,6 +41,17 @@ export const PlaceImageWrapper = styled.div`
   position: absolute;
   width: 750px;
   z-index: -1;
+
+  @media (max-width: 1250px) {
+    height: 400px;
+    width: 600px;
+  }
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+  }
 `;
 
 export const PlaceImageOverlay = styled.div`
@@ -65,6 +90,10 @@ export const Title = styled.div`
   margin-top: 16px;
   text-transform: uppercase;
   z-index: 1;
+
+  @media (max-width: 1250px) {
+    font-size: 20px;
+  }
 `;
 
 export const Description = styled.div`
@@ -74,9 +103,22 @@ export const Description = styled.div`
   line-height: 24px;
   max-width: 700px;
   z-index: 1;
+
+  @media (max-width: 1250px) {
+    font-size: 14px;
+    max-width: 600px;
+  }
 `;
 
-export const Right = styled.div``;
+export const Right = styled.div`
+  @media (max-width: 1250px) {
+    padding-left: 20px;
+  }
+
+  @media (max-width: 1000px) {
+    margin-top: 50px;
+  }
+`;
 
 export const InformativeSection = styled.div`
   align-items: center;
@@ -84,6 +126,12 @@ export const InformativeSection = styled.div`
   display: flex;
   gap: 32px;
   width: 100%;
+  margin-top: 50px;
+  flex-wrap: wrap;
+
+  @media (max-width: 1000px) {
+    margin-top: 0;
+  }
 `;
 
 export const ImageLogo = styled.img`

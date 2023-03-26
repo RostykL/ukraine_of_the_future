@@ -14,6 +14,10 @@ export const Item = styled.div`
   display: flex;
   gap: 2em;
   justify-content: space-between;
+
+  @media (max-width: 1250px) {
+    gap: 1em;
+  }
 `;
 
 export const Text = styled.div`
@@ -22,4 +26,8 @@ export const Text = styled.div`
   font-weight: 600;
   text-align: right;
   text-transform: uppercase;
+
+  @media (max-width: 1250px) {
+    font-size: 1.2em;
+  }
 `;

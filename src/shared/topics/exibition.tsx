@@ -1,5 +1,6 @@
 import * as S from "components/Slides/Exhibition/styles";
-import STEPAN_KUYBIDA from "assets/stepan_kuybida.png";
+import LvivDefenceCluster from "assets/people/LvivDefenceCluster.png";
+import Unbroken from "assets/unbroken.png";
 import HighlightText from "components/HighlightText";
 
 export const EXHIBITIONS = {
@@ -7,7 +8,7 @@ export const EXHIBITIONS = {
     {
       description: "Лідер волонтерського руху з виготовлення бронежилетів.",
       title: () => <S.EventTitle>Львівський оборонний кластер</S.EventTitle>,
-      photo: STEPAN_KUYBIDA,
+      photo: LvivDefenceCluster,
       subDescription: () => (
         <S.EventSubDescription>
           Команда однодумців, що розробляє передові технологічні засоби для
@@ -19,7 +20,7 @@ export const EXHIBITIONS = {
       description:
         "Гості Форуму зможуть придбати цінні експонати та арт-об’єкти.",
       title: () => <S.EventTitle>Благодійний аукціон</S.EventTitle>,
-      photo: STEPAN_KUYBIDA,
+      photo: Unbroken,
       subDescription: () => (
         <S.EventSubDescription>
           Виручені кошти направимо до реабілітаційного центру “

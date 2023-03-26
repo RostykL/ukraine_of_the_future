@@ -1,4 +1,5 @@
-import STEPAN_KUYBIDA from "assets/stepan_kuybida.png";
+import IvanNavi from "assets/people/IvanNavi.png";
+import Shumei from "assets/people/Shumei.png";
 
 import * as S from "components/Slides/AfterParty/styles";
 
@@ -6,11 +7,11 @@ export const AFTER_PARTY = {
   "виступи зірок": [
     {
       title: () => <S.EventTitle>IVAN NAVI</S.EventTitle>,
-      photo: STEPAN_KUYBIDA,
+      photo: IvanNavi,
     },
     {
       title: () => <S.EventTitle>SHUMEI</S.EventTitle>,
-      photo: STEPAN_KUYBIDA,
+      photo: Shumei,
     },
   ],
 };

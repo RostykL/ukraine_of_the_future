@@ -4,6 +4,12 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  margin-top: 20px;
+
+  @media (max-width: 800px) {
+    margin-top: 0;
+  }
 `;
 
 export const ToggleItemWrapper = styled.div`
@@ -17,6 +23,12 @@ export const ToggleItemWrapper = styled.div`
     font-weight: 500;
     font-size: 1.5em;
   }
+
+  @media (max-width: 800px) {
+    margin-top: 24px;
+    padding: 0 20px;
+    font-size: 0.8em;
+  }
 `;
 
 export const SocialsWrapper = styled.div`
@@ -26,6 +38,13 @@ export const SocialsWrapper = styled.div`
   width: 100%;
   gap: 124px;
   margin-top: 64px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    margin-top: 32px;
+    gap: 56px;
+    margin-bottom: 32px;
+  }
 `;
 
 export const Column = styled.div`

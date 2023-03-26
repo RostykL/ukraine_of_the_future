@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   height: 100%;
+  margin-top: 64px;
+
+  @media (max-width: 800px) {
+    margin-top: 0;
+  }
 `;
 
 export const Title = styled.div`
@@ -13,16 +18,27 @@ export const Title = styled.div`
   gap: 6px;
   text-align: left;
   width: 100%;
+
+  @media (max-width: 800px) {
+    margin-top: 24px;
+    padding: 0 20px;
+    font-size: 1.5em;
+  }
 `;
 
 export const ListWrapper = styled.div`
-  margin-top: 24px;
+  margin: 24px 0;
 `;
 
 export const ListTextWrapper = styled.div`
   align-items: center;
   display: flex;
   gap: 16px;
+
+  @media (max-width: 800px) {
+    padding: 0 20px;
+    font-size: 0.8em;
+  }
 `;
 
 export const ListText = styled.div`

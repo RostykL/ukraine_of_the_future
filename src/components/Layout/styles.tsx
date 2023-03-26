@@ -5,7 +5,11 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   position: relative;
   max-width: 1500px;
-  overflow-y: hidden;
+  overflow: hidden;
+
+  @media (min-width: 2350px) {
+    overflow: unset;
+  }
 `;
 
 export const BackgroundImage = styled.img`
@@ -13,7 +17,7 @@ export const BackgroundImage = styled.img`
   position: absolute;
   opacity: 0.4;
   z-index: -2;
-  bottom: -24px;
+  bottom: -60px;
   right: 144px;
 `;
 

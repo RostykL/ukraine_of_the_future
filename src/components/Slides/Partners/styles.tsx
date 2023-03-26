@@ -2,7 +2,11 @@ import styled from "styled-components";
 import { COLORS } from "shared/colors";
 
 export const Wrapper = styled.div`
-  height: 100vh;
+  min-height: 100vh;
+
+  @media (max-width: 800px) {
+    padding-bottom: 64px;
+  }
 `;
 
 export const Header = styled.div`
@@ -28,6 +32,14 @@ export const Partners = styled.div`
   img {
     flex-shrink: 0;
     object-fit: cover;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    img {
+      max-width: 100%;
+    }
   }
 `;

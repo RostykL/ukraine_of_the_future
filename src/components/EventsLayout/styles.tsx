@@ -5,13 +5,19 @@ export const Wrapper = styled.div`
   height: 100%;
   position: relative;
   z-index: 2;
+  margin-top: 64px;
+
+  @media (max-width: 800px) {
+    margin-top: 0;
+  }
 `;
 
 export const TopicsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 0px 20px 20px;
   gap: 32px;
+
   &:not(:first-of-type) {
     margin-top: 40px;
   }
@@ -34,6 +40,10 @@ export const TopicTitleWrapper = styled.div`
     height: 2px;
     border-radius: 9999px;
     background: ${COLORS.orange};
+
+    //@media (max-width: 800px) {
+    //  display: none;
+    //}
   }
 `;
 
@@ -58,4 +68,8 @@ export const TopicsList = styled.div`
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @media (max-width: 700px) {
+    gap: 64px;
+  }
 `;

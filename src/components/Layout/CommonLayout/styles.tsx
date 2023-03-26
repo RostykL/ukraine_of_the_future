@@ -6,5 +6,8 @@ export const Wrapper = styled.div`
 
 export const ChildrenWrapper = styled.div`
   padding: 20px;
-  margin-top: 32px;
+
+  @media (max-width: 800px) {
+    padding: 0;
+  }
 `;

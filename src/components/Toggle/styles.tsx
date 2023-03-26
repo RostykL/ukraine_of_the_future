@@ -12,6 +12,10 @@ export const Wrapper = styled.div`
   min-width: 85px;
   padding: 6px 10px;
   position: relative;
+
+  @media (max-width: 1250px) {
+    min-width: 70px;
+  }
 `;
 
 export const Text = styled.div`
@@ -20,6 +24,10 @@ export const Text = styled.div`
   font-weight: 600;
   line-height: 15px;
   text-transform: uppercase;
+
+  @media (max-width: 1250px) {
+    font-size: 15px;
+  }
 `;
 
 const shakeAnimation = keyframes`
