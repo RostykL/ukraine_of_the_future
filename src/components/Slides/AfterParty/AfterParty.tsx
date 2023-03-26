@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import EventsLayout from "components/EventsLayout";
 import { AFTER_PARTY } from "shared/topics/afterParty";
-import { ANCHORS } from "../../../shared/ANCHORS";
+import { ANCHORS } from "shared/ANCHORS";
 
 const topics = Object.keys(AFTER_PARTY);
 

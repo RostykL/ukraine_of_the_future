@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import {
+  COMMON_TEXT_FONT_SIZE,
+  COMMON_TITLE_FONT_SIZE,
+} from "../../../shared/fontSize";
 
 export const Wrapper = styled.div`
   height: 100%;
@@ -13,7 +17,7 @@ export const Title = styled.div`
   color: white;
   display: flex;
   flex-direction: column;
-  font-size: 2.2em;
+  ${COMMON_TITLE_FONT_SIZE.medium}
   font-weight: 500;
   gap: 6px;
   text-align: left;
@@ -22,7 +26,6 @@ export const Title = styled.div`
   @media (max-width: 800px) {
     margin-top: 24px;
     padding: 0 20px;
-    font-size: 1.5em;
   }
 `;
 
@@ -43,7 +46,7 @@ export const ListTextWrapper = styled.div`
 
 export const ListText = styled.div`
   color: white;
-  font-size: 1.5em;
+  ${COMMON_TEXT_FONT_SIZE.desktop}
   line-height: 32px;
   font-weight: 500;
 

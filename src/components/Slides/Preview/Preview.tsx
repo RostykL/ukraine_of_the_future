@@ -59,7 +59,6 @@ const Preview = () => {
           <Circles />
         </S.Right>
       </S.Headline>
-
       <S.Bottom>
         <S.InformativeSection>
           <S.ImageLogo src={Emily} />

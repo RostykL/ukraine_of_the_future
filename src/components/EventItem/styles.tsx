@@ -17,14 +17,19 @@ export const Wrapper = styled.div`
 `;
 
 export const Photo = styled.img`
-  border-radius: 16px;
+  border-radius: 6px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  max-width: 300px;
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: top;
 
   @media (max-width: 650px) {
     border-radius: 0;
     width: 100%;
     height: 100%;
+    max-height: 350px;
   }
 `;
 
@@ -36,6 +41,7 @@ export const InformationWrapper = styled.div`
   gap: 8px;
   text-align: left;
   font-weight: 500;
+  width: 100%;
 `;
 
 export const Title = styled.div`

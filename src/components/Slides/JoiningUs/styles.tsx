@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { COMMON_TEXT_FONT_SIZE } from "../../../shared/fontSize";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -21,13 +22,12 @@ export const ToggleItemWrapper = styled.div`
   div {
     color: white;
     font-weight: 500;
-    font-size: 1.5em;
+    ${COMMON_TEXT_FONT_SIZE.desktop}
   }
 
   @media (max-width: 800px) {
     margin-top: 24px;
     padding: 0 20px;
-    font-size: 0.8em;
   }
 `;
 

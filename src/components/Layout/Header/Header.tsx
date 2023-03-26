@@ -1,7 +1,6 @@
 import * as S from "./styles";
 
 import Logo from "assets/svg/logo.svg";
-import Dropdown from "components/Dropdown";
 import { ANCHORS } from "shared/ANCHORS";
 import { Hamburger } from "./styles";
 import { useState } from "react";
@@ -21,7 +20,10 @@ const Header = () => {
           <Hamburger onClick={openHamburgerHandler}>
             <RenderHamburgerIcon isOpen={openHamburger} />
           </Hamburger>
-          <HamburgerMenu isOpen={openHamburger} />
+          <HamburgerMenu
+            isOpen={openHamburger}
+            onClose={openHamburgerHandler}
+          />
         </S.Logo>
         <S.Navigation>
           <S.NavItem href={"#" + ANCHORS.ABOUT_EVENT}>Про подію</S.NavItem>

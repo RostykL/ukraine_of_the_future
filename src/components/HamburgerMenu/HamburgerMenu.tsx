@@ -3,6 +3,7 @@ import { ANCHORS } from "shared/ANCHORS";
 
 interface HamburgerMenuProps {
   isOpen: boolean;
+  onClose?: () => void;
 }
 
 export const RenderHamburgerIcon = ({ isOpen }: HamburgerMenuProps) => {
@@ -42,7 +43,7 @@ export const RenderHamburgerIcon = ({ isOpen }: HamburgerMenuProps) => {
   );
 };
 
-const HamburgerMenu = ({ isOpen }: HamburgerMenuProps) => {
+const HamburgerMenu = ({ isOpen, onClose }: HamburgerMenuProps) => {
   if (!isOpen) {
     return null;
   }
@@ -50,17 +51,33 @@ const HamburgerMenu = ({ isOpen }: HamburgerMenuProps) => {
   return (
     <S.Wrapper>
       <S.NavigationList>
-        <S.NavItem href={"#" + ANCHORS.ABOUT_EVENT}>Про подію</S.NavItem>
-        <S.NavItem href={"#" + ANCHORS.AUCTION}>Аукціон</S.NavItem>
-        <S.NavItem href={"#" + ANCHORS.LECTURE}>Лекторій</S.NavItem>
-        <S.NavItem href={"#" + ANCHORS.EXHIBIT}>Експозиція</S.NavItem>
-        <S.NavItem href={"#" + ANCHORS.EXHIBITION_AREA}>
+        <S.NavItem href={"#" + ANCHORS.ABOUT_EVENT} onClick={onClose}>
+          Про подію
+        </S.NavItem>
+        <S.NavItem href={"#" + ANCHORS.AUCTION} onClick={onClose}>
+          Аукціон
+        </S.NavItem>
+        <S.NavItem href={"#" + ANCHORS.LECTURE} onClick={onClose}>
+          Лекторій
+        </S.NavItem>
+        <S.NavItem href={"#" + ANCHORS.EXHIBIT} onClick={onClose}>
+          Експозиція
+        </S.NavItem>
+        <S.NavItem href={"#" + ANCHORS.EXHIBITION_AREA} onClick={onClose}>
           Виставкова зона
         </S.NavItem>
-        <S.NavItem href={"#" + ANCHORS.AFTER_PARTY}>AfterParty</S.NavItem>
-        <S.NavItem href={"#" + ANCHORS.VIDEO_PROJECT}>Відеопроект</S.NavItem>
-        <S.NavItem href={"#" + ANCHORS.CONTACTS}>Контакти</S.NavItem>
-        <S.NavItem href={"#" + ANCHORS.PARTNERS}>Партнери</S.NavItem>
+        <S.NavItem href={"#" + ANCHORS.AFTER_PARTY} onClick={onClose}>
+          AfterParty
+        </S.NavItem>
+        <S.NavItem href={"#" + ANCHORS.VIDEO_PROJECT} onClick={onClose}>
+          Відеопроект
+        </S.NavItem>
+        <S.NavItem href={"#" + ANCHORS.CONTACTS} onClick={onClose}>
+          Контакти
+        </S.NavItem>
+        <S.NavItem href={"#" + ANCHORS.PARTNERS} onClick={onClose}>
+          Партнери
+        </S.NavItem>
       </S.NavigationList>
     </S.Wrapper>
   );

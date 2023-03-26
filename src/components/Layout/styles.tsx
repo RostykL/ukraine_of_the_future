@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  min-height: 100vh;
   margin: 0 auto;
-  position: relative;
   max-width: 1500px;
   overflow: hidden;
 
@@ -17,8 +15,12 @@ export const BackgroundImage = styled.img`
   position: absolute;
   opacity: 0.4;
   z-index: -2;
-  bottom: -60px;
+  bottom: 0;
   right: 144px;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `;
 
 export const ChildrenWrapper = styled.div`

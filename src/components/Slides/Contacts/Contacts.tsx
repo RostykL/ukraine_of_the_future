@@ -1,24 +1,26 @@
 import * as S from "./styles";
 import Logo from "assets/svg/logo.svg";
+import Mykola from "assets/people/Mykola.jpeg";
+import Olesya from "assets/people/Olesya.jpeg";
+import Christ from "assets/people/Buddy.jpeg";
 
-import MockPhoto from "assets/stepan_kuybida.png";
-import { ANCHORS } from "../../../shared/ANCHORS";
+import { ANCHORS } from "shared/ANCHORS";
 
 const CONTACTS = [
   {
-    photo: MockPhoto,
+    photo: Olesya,
     title: "Координатор форуму:",
     fullName: "Олеся Пошивак",
     tel: "+380677225211",
   },
   {
-    photo: MockPhoto,
+    photo: Christ,
     title: "Координатор по роботі з партнерами заходу:",
     fullName: "Христина Русін",
     tel: "+380503177110",
   },
   {
-    photo: MockPhoto,
+    photo: Mykola,
     title: "Координатор з питань продажу квитків:",
     fullName: "Микола Юрашко",
     tel: "+380674405377",

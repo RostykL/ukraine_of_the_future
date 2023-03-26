@@ -1,4 +1,6 @@
 import STEPAN_KUYBIDA from "assets/stepan_kuybida.png";
+import OlegDenysenko from "assets/people/OlegDenysenko.png";
+import KUSTceramics from "assets/KUSTceramics.png";
 
 import * as S from "components/Slides/ExhibitionZone/styles";
 
@@ -8,13 +10,13 @@ export const EXHIBITION_ZONE = {
       description:
         "український художник, що здобув світове визнання. Винахідник нового виду мистецтва - гесографії",
       title: () => <S.EventTitle>Олег Денисенко</S.EventTitle>,
-      photo: STEPAN_KUYBIDA,
+      photo: OlegDenysenko,
     },
     {
       description:
         "Виставка бренду креативної кераміки, основна місія якого – надихати й мотивувати на творчий підхід до життя",
       title: () => <S.EventTitle>KUSTceramics</S.EventTitle>,
-      photo: STEPAN_KUYBIDA,
+      photo: KUSTceramics,
     },
     {
       description:

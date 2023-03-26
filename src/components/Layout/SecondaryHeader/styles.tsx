@@ -7,8 +7,12 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding-left: 20px;
-  margin-top: 64px;
+  padding: 0 20px;
+  margin-top: 48px;
+
+  @media (max-width: 800px) {
+    padding: 0;
+  }
 `;
 
 export const Logo = styled.img`
@@ -45,5 +49,10 @@ export const Text = styled.div`
     max-width: 380px;
     font-size: 1.4em;
     line-height: 36px;
+  }
+
+  @media (max-width: 800px) {
+    padding: 16px 20px;
+    max-width: 100%;
   }
 `;

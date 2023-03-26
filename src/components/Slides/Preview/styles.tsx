@@ -1,12 +1,14 @@
 import styled from "styled-components";
+import {
+  COMMON_TEXT_FONT_SIZE,
+  COMMON_TITLE_FONT_SIZE,
+} from "../../../shared/fontSize";
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 64px;
-  min-height: 100vh;
-  max-height: 800px;
-  margin-top: 50px;
+  margin-top: 64px;
   position: relative;
 
   @media (max-width: 1250px) {
@@ -28,7 +30,7 @@ export const Headline = styled.div`
   z-index: 1;
 
   @media (max-width: 1000px) {
-    gap: 64px;
+    //gap: 64px;
     flex-direction: column;
   }
 `;
@@ -81,19 +83,16 @@ export const Left = styled.div`
   flex-direction: column;
   gap: 16px;
   padding-left: 20px;
+  height: 400px;
 `;
 
 export const Title = styled.div`
   color: whitesmoke;
-  font-size: 32px;
+  ${COMMON_TITLE_FONT_SIZE.medium};
   font-weight: 700;
   margin-top: 16px;
   text-transform: uppercase;
   z-index: 1;
-
-  @media (max-width: 1250px) {
-    font-size: 20px;
-  }
 `;
 
 export const Description = styled.div`
@@ -105,7 +104,7 @@ export const Description = styled.div`
   z-index: 1;
 
   @media (max-width: 1250px) {
-    font-size: 14px;
+    font-size: ${COMMON_TEXT_FONT_SIZE.tablet};
     max-width: 600px;
   }
 `;
@@ -113,10 +112,6 @@ export const Description = styled.div`
 export const Right = styled.div`
   @media (max-width: 1250px) {
     padding-left: 20px;
-  }
-
-  @media (max-width: 1000px) {
-    margin-top: 50px;
   }
 `;
 
@@ -126,7 +121,7 @@ export const InformativeSection = styled.div`
   display: flex;
   gap: 32px;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 100px;
   flex-wrap: wrap;
 
   @media (max-width: 1000px) {
@@ -136,6 +131,10 @@ export const InformativeSection = styled.div`
 
 export const ImageLogo = styled.img`
   max-width: 250px;
+
+  @media (max-width: 800px) {
+    max-width: 150px;
+  }
 `;
 
 export const BuyTicketsWrapper = styled.div`

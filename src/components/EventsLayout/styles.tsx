@@ -40,10 +40,6 @@ export const TopicTitleWrapper = styled.div`
     height: 2px;
     border-radius: 9999px;
     background: ${COLORS.orange};
-
-    //@media (max-width: 800px) {
-    //  display: none;
-    //}
   }
 `;
 
@@ -67,9 +63,5 @@ export const TopicsList = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-
-  @media (max-width: 700px) {
-    gap: 64px;
-  }
+  gap: 64px;
 `;

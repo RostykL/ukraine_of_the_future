@@ -1,5 +1,9 @@
 import styled from "styled-components";
 import { COLORS } from "shared/colors";
+import {
+  COMMON_TEXT_FONT_SIZE,
+  COMMON_TITLE_FONT_SIZE,
+} from "../../../shared/fontSize";
 
 export const Wrapper = styled.div`
   position: relative;
@@ -10,8 +14,6 @@ export const DateWrapper = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 64px 0;
-  gap: 64px;
 
   @media (max-width: 600px) {
     padding: 32px 0;
@@ -36,10 +38,10 @@ export const Image = styled.img`
 
 export const Description = styled.div`
   color: whitesmoke;
-  font-size: 2em;
+  ${COMMON_TEXT_FONT_SIZE.desktop}
   font-weight: 500;
-  line-height: 48px;
   letter-spacing: 1px;
+  margin: 24px 0;
 
   @media (max-width: 1250px) {
     font-size: 1em;
@@ -52,30 +54,27 @@ export const Description = styled.div`
 `;
 
 export const ForumWillGatherWrapper = styled.div`
-  margin-top: 64px;
-
   @media (max-width: 800px) {
-    margin-top: 32px;
     padding: 20px;
   }
 `;
 
 export const ForumWillGatherTitle = styled.div`
+  ${COMMON_TITLE_FONT_SIZE.big}
   color: ${COLORS.orange};
-  font-size: 3em;
   font-weight: 600;
+  margin-bottom: 24px;
   text-transform: uppercase;
 
   @media (max-width: 800px) {
-    font-size: 2em;
+    ${COMMON_TITLE_FONT_SIZE.medium}
   }
 `;
 
 export const ForumWillGatherDescription = styled.div`
   color: white;
-  font-size: 2em;
+  ${COMMON_TEXT_FONT_SIZE.extra}
   font-weight: 500;
-  margin-top: 50px;
 
   @media (max-width: 800px) {
     margin-top: 24px;
@@ -84,27 +83,22 @@ export const ForumWillGatherDescription = styled.div`
 `;
 
 export const ForumWillGatherPeopleList = styled.div`
-  margin-top: 50px;
-  display: flex;
   align-items: flex-start;
-  gap: 24px;
-  position: relative;
+  display: flex;
   flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 24px;
 `;
 
 export const PeopleListItem = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: ${COLORS.green};
-  border-radius: 9999px;
-  padding: 10px;
-  max-width: 450px;
-  width: 100%;
+`;
 
-  @media (max-width: 600px) {
-    max-width: 300px;
-  }
+export const ListItemColor = styled.div`
+  width: 10px;
+  background: ${COLORS.orange};
+  margin-right: 8px;
+  border-radius: 99999px;
 `;
 
 export const ListItemTitle = styled.div`
@@ -117,18 +111,5 @@ export const ListItemTitle = styled.div`
 
   @media (max-width: 600px) {
     font-size: 1.2em;
-  }
-`;
-
-export const Circle = styled.div`
-  background: white;
-  border-radius: 100%;
-  flex-shrink: 0;
-  height: 64px;
-  width: 64px;
-
-  @media (max-width: 600px) {
-    height: 48px;
-    width: 48px;
   }
 `;

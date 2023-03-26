@@ -10,7 +10,7 @@ export const Wrapper = styled.a`
 
 export const Day = styled.div`
   color: ${COLORS.orange};
-  font-size: 20em;
+  font-size: 10em;
   line-height: 0.71em;
   font-weight: 600;
 
@@ -28,7 +28,7 @@ export const TimeMonthWrapper = styled.div`
 
 export const Time = styled.div`
   color: white;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 500;
 
   @media (max-width: 1250px) {
@@ -38,7 +38,7 @@ export const Time = styled.div`
 
 export const Month = styled.div`
   color: white;
-  font-size: 6em;
+  font-size: 4em;
   font-weight: 500;
   text-transform: uppercase;
 

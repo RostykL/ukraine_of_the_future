@@ -26,7 +26,7 @@ export const NavItem = styled.a`
   text-decoration: none;
 
   &:hover {
-    color: ${COLORS.orange};
+    opacity: 0.8;
     cursor: pointer;
   }
 `;

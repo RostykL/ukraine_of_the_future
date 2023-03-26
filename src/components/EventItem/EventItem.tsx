@@ -2,7 +2,7 @@ import * as S from "./styles";
 
 export interface EventItemProps {
   description?: (() => JSX.Element) | string;
-  photo: string;
+  photo: (() => JSX.Element) | string;
   subDescription?: (() => JSX.Element) | string | null;
   title?: (() => JSX.Element) | string | null;
 }
@@ -23,7 +23,7 @@ const EventItem = ({
 }: EventItemProps) => {
   return (
     <S.Wrapper>
-      <S.Photo src={photo} />
+      {typeof photo === "string" ? <S.Photo src={photo} /> : photo()}
       <S.InformationWrapper>
         {title ? <S.Title>{renderElement(title)}</S.Title> : null}
         {description ? (

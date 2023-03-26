@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { COLORS } from "shared/colors";
+import { COMMON_TEXT_FONT_SIZE, COMMON_TITLE_FONT_SIZE } from "shared/fontSize";
 
 export const Wrapper = styled.div`
   position: relative;
-  overflow: hidden;
 
   @media (min-width: 2350px) {
     overflow: unset;
@@ -46,7 +46,7 @@ export const Photo = styled.img`
 
 export const Text = styled.div`
   color: white;
-  font-size: 1.4em;
+  ${COMMON_TEXT_FONT_SIZE.desktop}
   font-weight: 500;
   letter-spacing: 1px;
   line-height: 40px;
@@ -57,7 +57,7 @@ export const Text = styled.div`
   align-items: center;
 
   @media (max-width: 800px) {
-    font-size: 1em;
+    ${COMMON_TEXT_FONT_SIZE.tablet}
     margin-top: 16px;
     padding: 0 20px;
   }
@@ -80,7 +80,7 @@ export const VideoProjectWrapper = styled.div`
 
 export const VideoProjectInspiration = styled.div`
   color: ${COLORS.orange};
-  font-size: 2em;
+  ${COMMON_TITLE_FONT_SIZE.medium}
   font-weight: 600;
   letter-spacing: 1px;
   margin: 24px 0 16px;
@@ -93,7 +93,7 @@ export const VideoProjectInspiration = styled.div`
 
 export const VideoProjectDescription = styled.div`
   color: white;
-  font-size: 1.2em;
+  ${COMMON_TEXT_FONT_SIZE.desktop}
   font-weight: 500;
   letter-spacing: 0.5px;
   max-width: 900px;

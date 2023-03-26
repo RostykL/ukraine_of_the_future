@@ -37,7 +37,6 @@ const Auction = () => {
 
         <S.ForumWillGatherWrapper>
           <S.ForumWillGatherTitle>ФОРУМ ОБ'ЄДНАЄ:</S.ForumWillGatherTitle>
-
           <S.ForumWillGatherDescription>
             Більше <HighlightText>1500</HighlightText> людей, з яких{" "}
             <HighlightText>57%</HighlightText> - власники і керівники бізнесу!
@@ -45,8 +44,8 @@ const Auction = () => {
           <S.ForumWillGatherPeopleList>
             {PEOPLE_LIST.map((name) => (
               <S.PeopleListItem>
+                <S.ListItemColor />
                 <S.ListItemTitle>{name}</S.ListItemTitle>
-                <S.Circle />
               </S.PeopleListItem>
             ))}
             <Circles styles={{ left: "-500px" }} />

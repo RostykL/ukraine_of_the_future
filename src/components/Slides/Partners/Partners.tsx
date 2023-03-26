@@ -14,7 +14,7 @@ import Hospital from "assets/partners/hospital.png";
 import Startup from "assets/partners/startup.png";
 import Skovoroda from "assets/partners/skovoroda.png";
 import Kontramarka from "assets/svg/kontramarka-logo.svg";
-import { ANCHORS } from "../../../shared/ANCHORS";
+import { ANCHORS } from "shared/ANCHORS";
 
 const PARTNERS = [
   Emily,
