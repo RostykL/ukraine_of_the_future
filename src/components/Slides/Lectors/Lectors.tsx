@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import { LECTURERS } from "shared/topics/lecturers";
 import EventsLayout from "components/EventsLayout";
-import { ANCHORS } from "../../../shared/ANCHORS";
+import { ANCHORS } from "shared/ANCHORS";
 
 const LECTURER_TOPICS = Object.keys(LECTURERS);
 

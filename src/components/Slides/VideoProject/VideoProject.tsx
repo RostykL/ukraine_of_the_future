@@ -4,7 +4,6 @@ import CommonLayout from "components/Layout/CommonLayout";
 
 import VideoProjectPhoto from "assets/video-project.png";
 import VideoProjectCamera from "assets/camera.png";
-
 import HighlightText from "components/HighlightText";
 import Circles from "components/Circles";
 import { ANCHORS } from "shared/ANCHORS";

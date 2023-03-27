@@ -5,7 +5,6 @@ import Olesya from "assets/people/Olesya.jpeg";
 import Christ from "assets/people/Buddy.jpeg";
 
 import { ANCHORS } from "shared/ANCHORS";
-import { PhotoBlackOverlay } from "./styles";
 
 const CONTACTS = [
   {

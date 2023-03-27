@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import EventsLayout from "components/EventsLayout";
 import { EXHIBITIONS } from "shared/topics/exibition";
-import { ANCHORS } from "../../../shared/ANCHORS";
+import { ANCHORS } from "shared/ANCHORS";
 
 const topics = Object.keys(EXHIBITIONS);
 
