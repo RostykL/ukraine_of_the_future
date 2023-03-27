@@ -7,4 +7,5 @@ export const Wrapper = styled.div`
 
 export const EventTitle = styled.div`
   color: ${COLORS.orange};
+  text-align: center;
 `;

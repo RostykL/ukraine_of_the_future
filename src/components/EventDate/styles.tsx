@@ -17,6 +17,10 @@ export const Day = styled.div`
   @media (max-width: 1250px) {
     font-size: 10em;
   }
+
+  @media (max-width: 600px) {
+    font-size: 5em;
+  }
 `;
 
 export const TimeMonthWrapper = styled.div`
@@ -34,6 +38,10 @@ export const Time = styled.div`
   @media (max-width: 1250px) {
     font-size: 1.5em;
   }
+
+  @media (max-width: 600px) {
+    font-size: 1em;
+  }
 `;
 
 export const Month = styled.div`
@@ -44,5 +52,9 @@ export const Month = styled.div`
 
   @media (max-width: 1250px) {
     font-size: 3em;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 2em;
   }
 `;

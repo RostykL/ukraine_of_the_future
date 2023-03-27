@@ -30,7 +30,6 @@ export const Headline = styled.div`
   z-index: 1;
 
   @media (max-width: 1000px) {
-    //gap: 64px;
     flex-direction: column;
   }
 `;
@@ -83,7 +82,7 @@ export const Left = styled.div`
   flex-direction: column;
   gap: 16px;
   padding-left: 20px;
-  height: 400px;
+  //height: 400px;
 `;
 
 export const Title = styled.div`
@@ -110,6 +109,7 @@ export const Description = styled.div`
 `;
 
 export const Right = styled.div`
+  margin-top: 24px;
   @media (max-width: 1250px) {
     padding-left: 20px;
   }

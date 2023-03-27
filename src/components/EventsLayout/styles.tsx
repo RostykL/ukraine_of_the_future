@@ -41,6 +41,12 @@ export const TopicTitleWrapper = styled.div`
     border-radius: 9999px;
     background: ${COLORS.orange};
   }
+
+  @media (max-width: 400px) {
+    .line {
+      display: none;
+    }
+  }
 `;
 
 export const HeaderTopTitle = styled.div`

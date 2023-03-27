@@ -25,6 +25,9 @@ export const PhotoWrapper = styled.div`
     height: 100%;
     max-height: 350px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -42,7 +45,7 @@ export const Photo = styled.img`
   border-radius: 100%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   flex-shrink: 0;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
   object-position: top;
   width: 200px;

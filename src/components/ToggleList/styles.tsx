@@ -30,4 +30,8 @@ export const Text = styled.div`
   @media (max-width: 1250px) {
     font-size: 1.2em;
   }
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
 `;
