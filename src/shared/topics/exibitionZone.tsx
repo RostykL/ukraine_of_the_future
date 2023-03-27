@@ -1,4 +1,4 @@
-import STEPAN_KUYBIDA from "assets/stepan_kuybida.png";
+import OleksaMelnyk from "assets/people/OleksaMelnyk.png";
 import OlegDenysenko from "assets/people/OlegDenysenko.png";
 import KUSTceramics from "assets/KUSTceramics.png";
 
@@ -22,7 +22,7 @@ export const EXHIBITION_ZONE = {
       description:
         "скульптор по дереву за фахом, художник та музикант. Автор інтерактивної  інсталяції 'BINDU' (Svitlo galery), учасник міжнародних та всеукраїнських виставок, арт-фестивалів",
       title: () => <S.EventTitle>Олекса Мельник</S.EventTitle>,
-      photo: STEPAN_KUYBIDA,
+      photo: OleksaMelnyk,
     },
   ],
 };

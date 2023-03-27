@@ -5,6 +5,7 @@ import Olesya from "assets/people/Olesya.jpeg";
 import Christ from "assets/people/Buddy.jpeg";
 
 import { ANCHORS } from "shared/ANCHORS";
+import { PhotoBlackOverlay } from "./styles";
 
 const CONTACTS = [
   {
@@ -42,6 +43,7 @@ const Contacts = () => {
           {CONTACTS.map(({ photo, title, fullName, tel }) => {
             return (
               <S.ContactWrapper>
+                <S.PhotoBlackOverlay />
                 <S.ContactPhoto src={photo} />
                 <S.ContactInformation>
                   <div className="title">{title}</div>

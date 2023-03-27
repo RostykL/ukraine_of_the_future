@@ -48,7 +48,6 @@ const Auction = () => {
                 <S.ListItemTitle>{name}</S.ListItemTitle>
               </S.PeopleListItem>
             ))}
-            <Circles styles={{ left: "-500px" }} />
           </S.ForumWillGatherPeopleList>
         </S.ForumWillGatherWrapper>
       </CommonLayout>

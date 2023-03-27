@@ -23,7 +23,14 @@ const EventItem = ({
 }: EventItemProps) => {
   return (
     <S.Wrapper>
-      {typeof photo === "string" ? <S.Photo src={photo} /> : photo()}
+      {typeof photo === "string" ? (
+        <S.PhotoWrapper>
+          <S.PhotoBlackOverlay />
+          <S.Photo src={photo} />
+        </S.PhotoWrapper>
+      ) : (
+        photo()
+      )}
       <S.InformationWrapper>
         {title ? <S.Title>{renderElement(title)}</S.Title> : null}
         {description ? (

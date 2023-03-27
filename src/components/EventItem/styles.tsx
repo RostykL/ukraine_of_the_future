@@ -16,21 +16,36 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Photo = styled.img`
-  border-radius: 6px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  width: 200px;
+export const PhotoWrapper = styled.div`
   height: 200px;
-  flex-shrink: 0;
-  object-fit: cover;
-  object-position: top;
+  width: 200px;
 
   @media (max-width: 650px) {
     border-radius: 0;
-    width: 100%;
     height: 100%;
     max-height: 350px;
+    width: 100%;
   }
+`;
+
+export const PhotoBlackOverlay = styled.div`
+  height: 200px;
+  position: absolute;
+  width: 200px;
+  background: black;
+  opacity: 0.4;
+  z-index: 1;
+  border-radius: 100%;
+`;
+
+export const Photo = styled.img`
+  border-radius: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  width: 200px;
 `;
 
 export const InformationWrapper = styled.div`

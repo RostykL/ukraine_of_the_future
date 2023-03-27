@@ -32,7 +32,7 @@ export const Logo = styled.div`
 `;
 
 export const Contacts = styled.div`
-  color: ${COLORS.green};
+  color: ${COLORS.orange};
   font-size: 2em;
   font-weight: 600;
   text-transform: uppercase;
@@ -49,6 +49,16 @@ export const ContentList = styled.div`
   flex-direction: column;
   gap: 40px;
   width: max-content;
+`;
+
+export const PhotoBlackOverlay = styled.div`
+  height: 200px;
+  position: absolute;
+  width: 200px;
+  background: black;
+  opacity: 0.4;
+  z-index: 1;
+  border-radius: 100%;
 `;
 
 export const ContactWrapper = styled.div`
